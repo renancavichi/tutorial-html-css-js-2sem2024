@@ -10,6 +10,7 @@ h5 {
 #page {
     width: 900px;
     margin: 0 auto;
+    display: flex;
 }
 
 #header {
@@ -18,13 +19,9 @@ h5 {
     background-color: #c67a10;
 }
 
-#main{
-    display: flex;
-}
-
 #sidebar {
     width: 150px;
-    height: 500px;
+    height: 680px;
     background-color: #22b925;
 }
 

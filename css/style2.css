@@ -22,7 +22,7 @@ h5 {
     display: flex;
 }
 
-#sidebar {
+#sidebar-left, #sidebar-right {
     width: 150px;
     height: 500px;
     background-color: #22b925;

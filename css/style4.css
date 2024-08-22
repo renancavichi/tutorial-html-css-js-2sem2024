@@ -18,13 +18,13 @@ h5 {
     background-color: #c67a10;
 }
 
-#main{
+#container{
     display: flex;
 }
 
 #sidebar {
     width: 150px;
-    height: 500px;
+    height: 600px;
     background-color: #22b925;
 }
 

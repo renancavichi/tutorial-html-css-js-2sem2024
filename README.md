@@ -13,3 +13,7 @@ git init
 git config --global user.name "Renan Cavichi"
 git config --global user.email "renancavichi@gmail.com"
 ```
+
+# VS Code Extension
+
+VS HTML to CSS
