@@ -1,0 +1,21 @@
+#container1 {
+    background: #564563;
+    width: 80%;
+    height: 300px;
+    display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+.box {
+    background: #099e09;
+    width: 100px;
+    height: 100px;
+}
+
+.ml-auto{
+    margin: 0 0 0 auto;
+}
