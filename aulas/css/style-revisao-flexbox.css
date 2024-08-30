@@ -1,0 +1,115 @@
+#page {
+    width: 1000px;
+    height: 700px;
+    background: aquamarine;
+    margin: 0 auto;
+}
+
+#header {
+    height: 80px;
+    background: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 40px;
+    width: 150px;
+    background: #459485;
+    padding: 10px;
+}
+
+#menu {
+    height: 40px;
+    width: 350px;
+    background: #1f4ca1;
+    padding: 10px;
+}
+
+.section {
+    height: 350px;
+    background: #a6abb3;
+    padding: 10px;
+    border-bottom: 1px solid #999999;
+    display: flex;
+    align-items: center;
+}
+
+.s1 {
+    gap: 30px;
+    justify-content: center;
+}
+
+.s2, .s4{
+    justify-content: space-around;
+}
+
+.s2 div, .s4 > div{
+    width: 225px;
+    height: 250px;
+    background: #459485;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+.s4 div div {
+    width: 225px;
+    height: 50px;
+    background: #e4c22b; 
+}
+
+#end {
+    flex-direction: column-reverse;
+}
+
+.s3 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s3 > div{
+    display: flex;
+    gap: 40px;
+}
+
+#container1{
+    background: #1f4ca1;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#container2{
+    background: #0ec035;
+    width: 400px;
+    height: 250px;
+}
+
+#box1 {
+    background: #c48613;
+    width: 400px;
+    height: 50px; 
+}
+
+#box2, #box3 {
+    background: #c413a7;
+    width: 150px;
+    height: 50px; 
+}
+
+.box4 {
+    background: #e9a14f;
+    width: 150px;
+    height: 140px;  
+}
+
+.box5 {
+    background: #e2861c;
+    width: 550px;
+    height: 140px;  
+}
