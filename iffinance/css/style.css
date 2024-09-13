@@ -27,8 +27,12 @@ header .wrapper{
 
 #logo{
     width: 150px;
+}
+
+#logo a{
     display: flex;
     gap: 10px;
+    text-decoration: none;
 }
 
 #logo h1{
