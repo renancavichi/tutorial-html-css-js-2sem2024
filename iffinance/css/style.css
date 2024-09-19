@@ -72,7 +72,38 @@ header nav ul li a:hover{
     border-bottom: 5px solid #F19E39;
 }
 
-
 main{
     color: #FFF;
+}
+
+table {
+    
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #3e3e3e;
+}
+tr:nth-child(odd) {
+    background-color: #5a5a5a;
+}
+
+tr:nth-child(1){
+    background-color: #3a3a3a;
+}
+
+tr:nth-child(2){
+    background-color: #2c2c2c;
+}
+
+.tb-first-column{
+    background-color: #111111;
+}
+
+.tb-border-right{
+    border-right: 1px solid #5a5a5a;
 }
