@@ -107,3 +107,48 @@ tr:nth-child(2){
 .tb-border-right{
     border-right: 1px solid #5a5a5a;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+fieldset{
+    border: 1px solid #2c2c2c;
+    border-radius: 20px;
+}
+
+fieldset:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password], select, textarea{
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+    border: none;
+    margin: 5px 0 10px 0;
+    color: #FFF;
+    font-size: 16px;
+}
+
+select{
+    width: fit-content;
+}
+
+input[type=submit]{
+    width: 50%;
+    background-color: #F19E39;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #c77d22;
+}
