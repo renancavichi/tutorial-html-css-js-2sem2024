@@ -5,6 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IFFinance</title>
         <link rel="stylesheet" href="./css/style.css">
+        <script>
+            const nome = "Renan"
+            const sobreNome = "Cavichi"
+            const nomeCompleto = nome + " " + sobreNome
+
+            const campoEscolhido = 'altura'
+
+            const user = {
+                nome: "Paulo",
+                email: "paulo@gmail.com",
+                altura: 1.75,
+                id: 10,
+                'Nome Completo': 'Paulo da Silva',
+                idAdmins: [4, 20, 30, 33],
+                endereco: {
+                    rua: "Rua dos Bobos",
+                    numero: 0
+                },
+                sobrenome: () => {
+                    return nome
+                }
+            }
+
+            const idAdmins = [1, 5, 10, 80, {rua: 'Dos Bodos', numero: 0}]
+
+            console.log(`Olá ${user.sobrenome()}, seja bem-vindo! ${idAdmins[4].numoro}`)
+        </script>
     </head>
     <body>
         <header>

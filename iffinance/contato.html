@@ -34,15 +34,15 @@
                     <fieldset>
                         <legend>Dados Pessoais</legend>
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome">
+                        <input type="text" id="nome" name="nome" value="teste" placeholder="teste">
                         <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha">
+                        <input type="password" id="senha" name="senha" required>
                     </fieldset>
                     <fieldset>
                         <legend>Preferências</legend>
                         <p>Em qual bolsa você tem mais investimentos?</p>
                         <div>
-                            <input type="radio" id="ibovespa" name="bolsa" value="ibovespa">
+                            <input type="radio" id="ibovespa" name="bolsa" value="ibovespa" >
                             <label for="ibovespa">Ibovespa</label>
                         </div>
                         <div>
@@ -50,7 +50,7 @@
                             <label for="nasdaq">Nasdaq</label>
                         </div>
                         <div>
-                            <input type="radio" id="nyse" name="bolsa" value="nyse">
+                            <input type="radio" id="nyse" name="bolsa" value="nyse" checked>
                             <label for="nyse">Nyse</label>
                         </div>
                         <br>
@@ -71,9 +71,10 @@
                     </select>
 
                     <label for="comentario">Digite seu comentário:</label>
-                    <textarea id="comentario" name="comentario"></textarea>
+                    <textarea id="comentario" name="comentario">    </textarea>
 
                     <input type="submit" value="Enviar">
+                    <button type="button" value="Resetar">
 
                 </form>
 
