@@ -47,7 +47,7 @@
 
             const idAdmins = [1, 5, 10, 80, {rua: 'Dos Bodos', numero: 0}]
 
-            console.log(`Olá ${teste(user.nome, user.sobreNome)}, seja bem-vindo! ${idAdmins[4].numoro}`)
+            console.log(`Olá ${user.nomeCompleto(user.nome, user.sobreNome)}, seja bem-vindo! ${idAdmins[4].numoro}`)
         </script>
     </head>
     <body>
@@ -73,7 +73,44 @@
         <main>
             <div class="wrapper">
                 <h1>Home</h1>
+
+                <input type="text" id="txtInput">
+
+                <button onclick="pegarTexto()">Pegar Texto</button>
+                <button onclick="mudar()">Mudar Cor Logo</button>
+
+                <div id="resultado"></div>
             </div>
         </main>
     </body>
+    <script>
+
+        let valor = 10
+        valor += 5
+        console.log(valor)
+
+        let corAtual = 'preto'
+
+        const mudar = () => {
+            const logo = document.getElementById('logo')
+
+            if(corAtual == 'preto'){
+                logo.style.background = "#FFF"
+                corAtual = 'branco'
+            } else {
+                logo.style.background = "#000"
+                corAtual = 'preto'
+            }
+             //logo.innerHTML += '<p>Novo Logo<p>'
+            console.log('Clicado...')
+        }
+
+        function pegarTexto () {
+            const txtInput = document.getElementById('txtInput')
+            const resultado = document.getElementById('resultado')
+
+            resultado.innerHTML = `<p>${txtInput.value}</p>`
+        }
+
+    </script>
 </html>
