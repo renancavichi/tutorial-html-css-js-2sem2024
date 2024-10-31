@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 2</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="./index.html">
+                        <h1><span>IF</span>Finance<h1>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <h1>Home</h1>
+
+                <p>Valor 1:</p>
+                <input type="text" id="txtInputV1">
+
+                <p>Valor 2:</p>
+                <input type="text" id="txtInputV2">
+
+                <button onclick="calcular('+')"> + </button>
+                <button onclick="calcular('-')"> - </button>
+                <button onclick="calcular('/')"> / </button>
+
+                <p>Resultado:</p>
+                <input type="text" id="txtInputResult">
+            </div>
+        </main>
+    </body>
+    <script>
+     
+    const calcular = (operador) => { // operador é igual '+' ou '-'
+        const v1 = parseInt(document.getElementById('txtInputV1').value)
+        const v2 = +document.getElementById('txtInputV2').value
+        const result = document.getElementById('txtInputResult')
+    
+        if(operador === '+') 
+            return result.value = v1 + v2
+        
+
+        if(operador === '-'){ 
+           return result.value = v1 - v2
+        }
+
+        alert('Operador inválido')
+    }
+    </script>
+</html>

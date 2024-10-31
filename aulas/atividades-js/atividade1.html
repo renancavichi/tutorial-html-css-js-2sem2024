@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 1</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="./index.html">
+                        <h1><span>IF</span>Finance<h1>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <h1>Home</h1>
+
+                <p>Digite a cor desejada:</p>
+                <input type="text" id="txtInput">
+
+                <button onclick="aplicarCor()">Aplicar Cor</button>
+
+                <div id="resultado" style="width: 200px; height: 200px; background: #567567;"></div>
+            </div>
+        </main>
+    </body>
+    <script>
+     
+    const aplicarCor = () => {
+        const txtInput = document.getElementById('txtInput')
+        const result = document.getElementById('resultado')
+
+        const cor = txtInput.value
+
+        result.style.background = cor
+    }
+    </script>
+</html>
