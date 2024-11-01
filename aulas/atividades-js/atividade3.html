@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 3</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="./index.html">
+                        <h1><span>IF</span>Finance<h1>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <h1>Home</h1>
+
+                <p>Cor:</p>
+                <input type="text" id="txtInput">
+                <button onclick="adicionarCor()">Adicionar Cor</button>
+
+                <p>Galeria:</p>
+                <div id="galeria" style="width: 200px; height: 200px; background: #d0d0d0;">
+                    <button onclick="aplicarCor('#10a91d')" style="width: 50px; height: 50px; background: #10a91d; margin: 10px;"></button>
+                    <button onclick="aplicarCor('#dc8514')" style="width: 50px; height: 50px; background: #dc8514; margin: 10px;"></button>
+                </div>
+
+                <p>Resultado:</p>
+                <div id="resultado" style="width: 200px; height: 200px; background: #6cb7f0; display: flex; justify-content: center; align-items: center;"></div>
+            </div>
+        </main>
+    </body>
+    <script>
+     
+    const adicionarCor = (operador) => { // operador é igual '+' ou '-'
+        const v1 = parseInt(document.getElementById('txtInputV1').value)
+        const v2 = +document.getElementById('txtInputV2').value
+        const result = document.getElementById('txtInputResult')
+
+    }
+
+    const aplicarCor = (cor) => { // operador é igual '+' ou '-'
+        const result = document.getElementById('resultado')
+
+        result.style.background = cor
+        result.innerHTML = `<p>${cor}</p>`
+
+    }
+    </script>
+</html>
