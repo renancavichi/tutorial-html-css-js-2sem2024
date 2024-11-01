@@ -21,13 +21,11 @@
                 <h1>Home</h1>
 
                 <p>Cor:</p>
-                <input type="text" id="txtInput">
+                <input type="text" id="txtCor">
                 <button onclick="adicionarCor()">Adicionar Cor</button>
 
                 <p>Galeria:</p>
                 <div id="galeria" style="width: 200px; height: 200px; background: #d0d0d0;">
-                    <button onclick="aplicarCor('#10a91d')" style="width: 50px; height: 50px; background: #10a91d; margin: 10px;"></button>
-                    <button onclick="aplicarCor('#dc8514')" style="width: 50px; height: 50px; background: #dc8514; margin: 10px;"></button>
                 </div>
 
                 <p>Resultado:</p>
@@ -37,11 +35,13 @@
     </body>
     <script>
      
-    const adicionarCor = (operador) => { // operador é igual '+' ou '-'
-        const v1 = parseInt(document.getElementById('txtInputV1').value)
-        const v2 = +document.getElementById('txtInputV2').value
-        const result = document.getElementById('txtInputResult')
+    const adicionarCor = () => { // operador é igual '+' ou '-'
+        const txtCor = document.getElementById('txtCor')
+        const galeria = document.getElementById('galeria')
 
+        const cor = txtCor.value
+
+        galeria.innerHTML += `<button onclick="aplicarCor('${cor}')" style="width: 50px; height: 50px; background: ${cor}; margin: 10px;"></button>`
     }
 
     const aplicarCor = (cor) => { // operador é igual '+' ou '-'
