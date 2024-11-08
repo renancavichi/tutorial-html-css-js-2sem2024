@@ -139,8 +139,7 @@ select{
     width: fit-content;
 }
 
-input[type=submit]{
-    width: 50%;
+input[type=submit], button{
     background-color: #F19E39;
     border-radius: 20px;
     padding: 10px 20px;
@@ -149,6 +148,52 @@ input[type=submit]{
     cursor: pointer;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, button:hover{
     background-color: #c77d22;
+}
+
+.flex-bt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.modal{
+    background: #1e1e1eaf;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal main{
+    background: #2d2d2d;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.modal main header{
+    background: none;
+    height: auto;
+}
+
+.modal main header h1{ 
+    margin: 0;
+}
+
+.modal main header button{
+    background: none;
+    color: #FFF;
+}
+
+.modal main header button:hover{
+    background: #000;
 }
