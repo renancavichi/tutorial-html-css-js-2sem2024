@@ -175,7 +175,7 @@ input[type=submit]:hover, button:hover{
 
 .modal main{
     background: #2d2d2d;
-    width: 700px;
+    width: 300px;
     height: 500px;
     border-radius: 20px;
     padding: 20px;
@@ -183,6 +183,7 @@ input[type=submit]:hover, button:hover{
 .modal main header{
     background: none;
     height: auto;
+    margin: 0 0 16px 0;
 }
 
 .modal main header h1{ 
@@ -196,4 +197,65 @@ input[type=submit]:hover, button:hover{
 
 .modal main header button:hover{
     background: #000;
+}
+
+.modal main form{
+    width: 100%;
+}
+
+.card-ticker{
+    width: 300px;
+    background: #2d2d2d;
+    border-radius: 16px;
+    padding: 14px;
+}
+
+.card-ticker header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: auto;
+    background: none;
+}
+
+.card-ticker header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.card-ticker header h4{
+    margin: 0;
+}
+
+.card-ticker header span{
+    margin: 0 0 0 auto;
+}
+
+.card-ticker main p {
+    color: #868686;
+    margin: 6px 0;
+}
+
+.card-ticker main p span{
+    font-size: 40px;
+}
+
+.card-ticker main p span span{
+    font-size: 20px;
+}
+
+.card-ticker footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-ticker footer p{
+    color: #868686;
+    margin: 6px 0 0 0;
+}
+
+.card-ticker footer p span{
+    color: #e5e5e5;
+    font-size: 18px;
 }
