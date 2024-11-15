@@ -259,3 +259,8 @@ input[type=submit]:hover, button:hover{
     color: #e5e5e5;
     font-size: 18px;
 }
+
+#card-list{
+    display: flex;
+    gap: 20px;
+}

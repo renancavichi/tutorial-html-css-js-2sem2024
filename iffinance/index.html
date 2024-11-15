@@ -33,20 +33,7 @@
                     <button style="height: 40px;" onclick="openModal()">+ Adicionar</button>
                 </div>
                 <div id="card-list">
-                    <div class="card-ticker">
-                        <header>
-                            <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" alt="Logo">
-                            <h4>Apple</h4>
-                            <span>AAPL</span>
-                        </header>
-                        <main>
-                            <p>Valor: <span style="color: #1ebd1e">150,00 <span>▲ ▼</span></span></p>
-                        </main>
-                        <footer>
-                            <p>Quantidade: <span>20</span></p>
-                            <p>Posição: <span>R$ 23.434,34</span></p>
-                        </footer>
-                    </div>
+                    
                 </div>
             </div>
         </main>
@@ -56,7 +43,7 @@
                     <h1>Adicionar Ação</h1>
                     <button onclick="closeModal()">⨉</button>
                 </header>
-                <form onsubmit="handleSubmitAddTicker(event)">
+                <form onsubmit="AddTicker(event)">
                     <label for="urlLogo">URL Logo:</label>
                     <input type="text" id="urlLogo" name="urlLogo">
                     <label for="nameCompany">Nome da Empresa:</label>
