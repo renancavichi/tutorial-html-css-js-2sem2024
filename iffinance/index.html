@@ -30,14 +30,14 @@
             <div class="wrapper">
                 <div class="flex-bt align-center">
                     <h1>Home</h1>
-                    <button style="height: 40px;" onclick="openModal()">+ Adicionar</button>
+                    <button style="height: 40px;" onclick="openModal('#modal-add-ticker')">+ Adicionar</button>
                 </div>
                 <div id="card-list">
                     
                 </div>
             </div>
         </main>
-        <div class="modal" onclick="closeModal(event)">
+        <div class="modal" id="modal-add-ticker" onclick="closeModal(event)">
             <main>
                 <header class="flex-bt align-center">
                     <h1>Adicionar Ação</h1>
@@ -54,6 +54,28 @@
                     <input type="text" id="quantity" name="quantity">
                     <label for="closedValue">Valor da Ação:</label>
                     <input type="text" id="closedValue" name="closedValue">
+
+                    <input type="submit" value="Adicionar" style="width: 50%;">
+                </form>
+            </main>
+        </div>
+        <div class="modal" id="modal-edit-ticker" onclick="closeModal(event)">
+            <main>
+                <header class="flex-bt align-center">
+                    <h1>Editar Ação</h1>
+                    <button onclick="closeModal()">⨉</button>
+                </header>
+                <form onsubmit="editTicker(event)">
+                    <label for="eUrlLogo">URL Logo:</label>
+                    <input type="text" id="eUrlLogo" name="urlLogo">
+                    <label for="eNameCompany">Nome da Empresa:</label>
+                    <input type="text" id="eNameCompany" name="nameCompany">
+                    <label for="eTicker">Símbolo:</label>
+                    <input type="text" id="eTicker" name="ticker">
+                    <label for="eQuantity">Quantidade:</label>
+                    <input type="text" id="eQuantity" name="quantity">
+                    <label for="eClosedValue">Valor da Ação:</label>
+                    <input type="text" id="eClosedValue" name="closedValue">
 
                     <input type="submit" value="Adicionar" style="width: 50%;">
                 </form>
