@@ -208,6 +208,7 @@ input[type=submit]:hover, button:hover{
     background: #2d2d2d;
     border-radius: 16px;
     padding: 14px;
+    position: relative;
 }
 
 .card-ticker header {
@@ -262,5 +263,19 @@ input[type=submit]:hover, button:hover{
 
 #card-list{
     display: flex;
+    gap: 20px;
+}
+
+.card-ticker .card-options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000be;
+    border-radius: 16px;
+    display: none;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }

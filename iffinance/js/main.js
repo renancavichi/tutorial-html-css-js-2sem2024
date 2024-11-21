@@ -13,7 +13,7 @@ function closeModal(event){
         return modal.style.display = 'none'
 }
 
-function AddTicker(event){
+function addTicker(event){
     //previne o comportamento padrão de recarregar a página ou enviar para algum endereço (action)
     // ▼
     event.preventDefault()
@@ -28,7 +28,7 @@ function AddTicker(event){
     const closedValue = event.target.closedValue.value
 
     cardList.innerHTML += `
-                    <div class="card-ticker">
+                    <div class="card-ticker" onmouseenter="showCardOptions(event)" onmouseleave="hideCardOptions(event)">
                         <header>
                             <img src="${urlLogo}" alt="Logo">
                             <h4>${nameCompany}</h4>
@@ -41,9 +41,22 @@ function AddTicker(event){
                             <p>Quantidade: <span>${quantity}</span></p>
                             <p>Posição: <span>R$ ${+quantity * +closedValue}</span></p>
                         </footer>
+                        <div class="card-options">
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </div>
                     </div>
                 `
     closeModal()
     event.target.reset()
 }
 
+function showCardOptions(event){
+    const cardOptions = event.target.querySelector('.card-options')
+    cardOptions.style.display = 'flex'
+}
+
+function hideCardOptions(event){
+    const cardOptions = event.target.querySelector('.card-options')
+    cardOptions.style.display = 'none'
+}
