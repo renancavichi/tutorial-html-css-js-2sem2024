@@ -37,11 +37,11 @@
                 </div>
             </div>
         </main>
-        <div class="modal" id="modal-add-ticker" onclick="closeModal(event)">
+        <div class="modal" id="modal-add-ticker" onclick="closeModal(event, '#modal-add-ticker')">
             <main>
                 <header class="flex-bt align-center">
                     <h1>Adicionar Ação</h1>
-                    <button onclick="closeModal()">⨉</button>
+                    <button onclick="closeModal(null, '#modal-add-ticker')">⨉</button>
                 </header>
                 <form onsubmit="addTicker(event)">
                     <label for="urlLogo">URL Logo:</label>
@@ -59,13 +59,13 @@
                 </form>
             </main>
         </div>
-        <div class="modal" id="modal-edit-ticker" onclick="closeModal(event)">
+        <div class="modal" id="modal-edit-ticker" onclick="closeModal(event, '#modal-edit-ticker')">
             <main>
                 <header class="flex-bt align-center">
                     <h1>Editar Ação</h1>
-                    <button onclick="closeModal()">⨉</button>
+                    <button onclick="closeModal(null, '#modal-edit-ticker')">⨉</button>
                 </header>
-                <form onsubmit="editTicker(event)">
+                <form onsubmit="updateTicker(event)">
                     <label for="eUrlLogo">URL Logo:</label>
                     <input type="text" id="eUrlLogo" name="urlLogo">
                     <label for="eNameCompany">Nome da Empresa:</label>
@@ -77,7 +77,7 @@
                     <label for="eClosedValue">Valor da Ação:</label>
                     <input type="text" id="eClosedValue" name="closedValue">
 
-                    <input type="submit" value="Adicionar" style="width: 50%;">
+                    <input type="submit" value="Editar" style="width: 50%;">
                 </form>
             </main>
         </div>
