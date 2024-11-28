@@ -35,7 +35,8 @@ Formulários
 
 # Revisão Avaliação 2 - JS
 
-Objetos
+Tipos de Variáveis
+Objetos / Array
 Funções
 Eventos: onclick, onsubmit, onmouseenter, onmouseleave
 Obter Elementos: getElementById e querySelector, closest
@@ -49,4 +50,7 @@ Envio de Formulários
     - event.target.inputname.value // para obter o valor de um campo do form
     - .value // para valores de input
     - event.target.reset()
-.split(' ')    
+
+------------------- Não vai cair na avaliação
+.split(' ')
+.replace('-', '_')    
