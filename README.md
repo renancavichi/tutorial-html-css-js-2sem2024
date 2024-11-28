@@ -16,9 +16,10 @@ git config --global user.email "renancavichi@gmail.com"
 
 # VS Code Extension
 
-VS HTML to CSS
+Live Server
+Material Icon
 
-# Revisão
+# Revisão Avaliação 1 - HTML e CSS
 
 Doctype
 Estrutura Básica
@@ -31,3 +32,21 @@ Flexbox
 Listas (ul, ol)
 Tabelas (colspan, rowspan)
 Formulários
+
+# Revisão Avaliação 2 - JS
+
+Objetos
+Funções
+Eventos: onclick, onsubmit, onmouseenter, onmouseleave
+Obter Elementos: getElementById e querySelector, closest
+Manipulação de Elementos: style, innerHTML, innerText, .remove(), .getAttribute('src')
+Objeto Event:
+    - event.target
+        - id
+        - className
+Envio de Formulários
+    - event.preventDefault()
+    - event.target.inputname.value // para obter o valor de um campo do form
+    - .value // para valores de input
+    - event.target.reset()
+.split(' ')    
