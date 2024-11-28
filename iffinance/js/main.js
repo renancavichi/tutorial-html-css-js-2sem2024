@@ -119,25 +119,24 @@ function addOrUpdateTicker(tickerData){
         console.log('Adicioar!')
         const cardList = document.querySelector('#card-list')
         cardList.innerHTML += `
-                    <div class="card-ticker" id="${tickerData.ticker}" onmouseenter="showCardOptions(event)" onmouseleave="hideCardOptions(event)">
-                        <header>
-                            <img src="${tickerData.urlLogo}" alt="Logo">
-                            <h4>${tickerData.nameCompany}</h4>
-                            <span>${tickerData.ticker}</span>
-                        </header>
-                        <main>
-                            <p>Valor: <span style="color: #1ebd1e">${tickerData.closedValue} <span>▲</span></span></p>
-                        </main>
-                        <footer>
-                            <p>Quantidade: <span>${tickerData.quantity}</span></p>
-                            <p>Posição: <span>R$ ${+tickerData.quantity * +tickerData.closedValue}</span></p>
-                        </footer>
-                        <div class="card-options">
-                            <button onclick="editTicker(event)">Editar</button>
-                            <button onclick="removeCard(event)">Excluir</button>
-                        </div>
-                    </div>
-                `
+            <div class="card-ticker" id="${tickerData.ticker}" onmouseenter="showCardOptions(event)" onmouseleave="hideCardOptions(event)">
+                <header>
+                    <img src="${tickerData.urlLogo}" alt="Logo">
+                    <h4>${tickerData.nameCompany}</h4>
+                    <span>${tickerData.ticker}</span>
+                </header>
+                <main>
+                    <p>Valor: <span style="color: #1ebd1e">${tickerData.closedValue} <span>▲</span></span></p>
+                </main>
+                <footer>
+                    <p>Quantidade: <span>${tickerData.quantity}</span></p>
+                    <p>Posição: <span>R$ ${+tickerData.quantity * +tickerData.closedValue}</span></p>
+                </footer>
+                <div class="card-options">
+                    <button onclick="editTicker(event)">Editar</button>
+                    <button onclick="removeCard(event)">Excluir</button>
+                </div>
+            </div>
+        `
     }
-
 }
