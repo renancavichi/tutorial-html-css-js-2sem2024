@@ -223,6 +223,7 @@ input[type=submit]:hover, button:hover{
     width: 40px;
     height: 40px;
     border-radius: 8px;
+    object-fit: contain;
 }
 
 .card-ticker header h4{
@@ -264,6 +265,7 @@ input[type=submit]:hover, button:hover{
 #card-list{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card-ticker .card-options{
